@@ -80,8 +80,7 @@ The hardware implementation in `hardware_hdl/` serves as a scale-bridged control
 ├── CITATION.cff                          # Machine-readable academic citation metadata
 ├── LICENSE                                # MIT License
 └── README.md
-
- 
+```
 ### 1. Cosmological Boltzmann Simulation (`class_engine/`)
 1. Clone a standard distribution of the [CLASS](https://github.com/lesgourg/class_public) Boltzmann code (v3.2.0+).
 2. Apply the fluid-injection and perturbation modifications found in `class_engine/feps_class_patch_6pct.c` to the `background.c` / `perturbations.c` modules.
