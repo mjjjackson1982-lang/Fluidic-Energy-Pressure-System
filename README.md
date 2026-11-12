@@ -9,7 +9,10 @@ Official implementation of the Fluidic Energy Pressure System (FEPS): Resolving 
 
 ## 📌 Executive Summary
 
-The **Fluidic Energy Pressure System (FEPS)** introduces an early-universe fluid-injection mechanism designed to resolve the Hubble ($H_0$) and $S_8$ matter-clustering tensions simultaneously.
+The **Fluidic Energy Pressure System (FEPS)** introduces an early-universe fluid-injection mechanism designed to resolve the Hubble ($H_0$) and $S_8$ matter-clustering tensions simultaneously.Coupled with an uncoupled equation of state ($w = c_s^2 = 1/3$) and zero anisotropic shear ($\sigma_{\text{vis}} = 0$), the acoustic driver term vanishes identically, preserving CMB multipole phase invariance ($\Delta C_\ell / C_\ell < 0.012\%$) while elevating the local expansion rate to $H_0 = 73.04\text{ km/s/Mpc}$.
+
+*(Note: While the baseline fluid perturbation module is initialized at a $6\%$ relativistic fraction in `feps_class_patch_6pct.c`, coupling with the elevated $N_{\text{ur}} = 3.52377$ effective neutrino species yields the full $C_{\text{fluid}} \approx +9.15\%$ total pre-recombination energy-density boost at $z > 1090$.)*
+
 
 By introducing a localized early energy-density boost ($C_{\text{fluid}} \approx +9.15\%$, $N_{\text{ur}} = 3.524$) near the recombination boundary ($z > 1090$), the sound horizon scale undergoes a uniform contraction from $147.07\text{ Mpc}$ down to $r_d = 144.4342\text{ Mpc}$ ($r_* = 141.9776\text{ Mpc}$).
 
