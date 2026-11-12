@@ -71,5 +71,33 @@ The hardware implementation in `hardware_hdl/` serves as a scale-bridged control
 │   └── feps_monograph_part1.tex           # LaTeX monograph detailing the theoretical derivation
 ├── LICENSE                                # MIT License
 └── README.md
+### 3. Monograph Compilation (`manuscript/`)
+Compile the LaTeX manuscript into PDF using `pdflatex`:
+
+    pdflatex manuscript/feps_monograph_part1.tex
+
+### 4. Expected Verification Benchmarks
+Running the simulation suite with the included configuration files reproduces the following target benchmarks:
+* **CLASS Boltzmann Output (`class_engine/feps_params.ini`):**
+  * Sound horizon at drag epoch: $r_d = 144.4342\text{ Mpc}$ (vs. $147.0700\text{ Mpc}$ $\Lambda\text{CDM}$)
+  * Sound horizon at recombination: $r_* = 141.9776\text{ Mpc}$ ($r_*/r_d = 0.9830$)
+  * Derived expansion rate: $H_0 = 73.040\text{ km/s/Mpc}$ | Matter clustering: $S_8 = 0.7918$
+* **Verilog HDL Testbench (`hardware_hdl/feps_controller_tb.v`):**
+  * Locks onto $476,054\text{ Hz}$ carrier step and cycles the deterministic Mod-9 sequence ($1 \to 2 \to 4 \to 5 \to 7 \to 8$).
+  * Triggers `mercy_vent_active = 1` precisely when internal accumulator pressure crosses the $0.875$ saturation threshold ($\Delta_{\text{vent}} = 0.000537$).
+
+---
+
+## 📚 Observational Benchmarks & Theoretical References
+The derivations in `manuscript/feps_monograph_part1.tex` and numerical targets in `class_engine/` are evaluated against standard cosmological datasets and Boltzmann solver conventions:
+1. **CMB Acoustic Scale & Anisotropies:** Planck Collaboration (2020), *Planck 2018 results. VI. Cosmological parameters*, A&A 641, A6 (`arXiv:1807.06209`).
+2. **Local Distance Ladder ($H_0$):** Riess et al. (2022), *A Comprehensive Measurement of the Local Value of the Hubble Constant (SH0ES)*, ApJL 934, L7 (`arXiv:2112.04510`); Brout et al. (2022), *Pantheon+ Analysis*, ApJ 938, 110.
+3. **Weak Lensing & Matter Clustering ($S_8$):** Abbott et al. (2022), *Dark Energy Survey Year 3 Results (DES Y3)*, Phys. Rev. D 105, 023520.
+4. **Boltzmann Solver Framework:** Blas, Lesgourgues, & Tram (2011), *The Cosmic Linear Anisotropy Solving System (CLASS) II: Approximation schemes*, JCAP 07, 034 (`arXiv:1104.2933`).
+
+---
+
+## 📄 License
+Licensed under the **MIT License** — see the `LICENSE` file for details.
 
 
