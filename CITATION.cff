@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, cosmological patch, or theoretical framework in your research, please cite it as below."
+title: "Fluidic Energy Pressure System (FEPS): Cosmological Realignment & Micro-Hardware Co-Simulation"
+type: software
+authors:
+  - family-names: "Jackson"
+    given-names: "Michael John"
+version: 1.0.0
+date-released: 2026-11-12
+license: MIT
+keywords:
+  - cosmology
+  - hubble-tension
+  - s8-tension
+  - boltzmann-solver
+  - class-cosmology
+  - verilog
+  - mcmc
+abstract: "Official implementation of the Fluidic Energy Pressure System (FEPS), introducing a pre-recombination relativistic fluid boost (+9.15% energy density, N_ur = 3.52377) derived from Stored Angular Momentum (SAMs) to resolve H_0 (73.04 km/s/Mpc) and S_8 (0.7918) tensions simultaneously, paired with a deterministic 476 kHz Verilog silicon matrix control architecture."
