@@ -69,3 +69,4 @@ The hardware implementation in `hardware_hdl/` serves as a scale-bridged control
 │   └── feps_monograph_part1.tex           # LaTeX monograph detailing the theoretical derivation
 ├── LICENSE                                # MIT License
 └── README.md
+
