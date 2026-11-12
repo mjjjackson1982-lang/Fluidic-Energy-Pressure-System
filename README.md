@@ -8,11 +8,6 @@ Official implementation of the Fluidic Energy Pressure System (FEPS): Resolving 
 
 ---
 
-# Fluidic-Energy-Pressure-System
-Official implementation of the Fluidic Energy Pressure System (FEPS): Resolving H_0 and S_8 cosmological tensions via early fluid outgassing and micro-silicon hardware co-simulation.
-
-# Fluidic Energy Pressure System (FEPS)
-**A Unified Field Hypothesis: Cosmological Realignment & Micro-Hardware Co-Simulation**
 
 ---
 ## 📌 Executive Summary
