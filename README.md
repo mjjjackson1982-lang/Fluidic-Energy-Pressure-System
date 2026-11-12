@@ -77,6 +77,7 @@ The hardware implementation in `hardware_hdl/` serves as a scale-bridged control
 ├── mcmc_chains/
 │   ├── feps_mcmc.param                    # 8-parameter MCMC sampler configuration (MontePython/Cobaya)
 │   └── gelman_rubin_summary.txt           # 4-chain parallel posterior & Gelman-Rubin convergence readout
+── CITATION.cff                           # Machine-readable academic citation metadata
 ├── LICENSE                                # MIT License
 └── README.md
 
