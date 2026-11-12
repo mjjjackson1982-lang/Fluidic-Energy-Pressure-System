@@ -60,7 +60,6 @@ The hardware implementation in `hardware_hdl/` serves as a scale-bridged control
 ## 📂 Repository Structure & How to Run
 
 ```text
-├─```text
 ├── class_engine/
 │   └── feps_class_patch_6pct.c            # C patch implementing the FEPS fluid boost in CLASS
 ├── hardware_hdl/
