@@ -62,9 +62,7 @@ The hardware implementation in `hardware_hdl/` serves as a scale-bridged control
 
 ---
 
-## 📂 Repository Structure & How to Run
 
-```text
 ## 📂 Repository Structure & How to Run
 
 ```text
