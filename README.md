@@ -71,6 +71,19 @@ The hardware implementation in `hardware_hdl/` serves as a scale-bridged control
 │   └── feps_monograph_part1.tex           # LaTeX monograph detailing the theoretical derivation
 ├── LICENSE                                # MIT License
 └── README.md
+### 1. Cosmological Boltzmann Simulation (`class_engine/`)
+1. Clone a standard distribution of the [CLASS](https://github.com/lesgourg/class_public) Boltzmann code (v3.2.0+).
+2. Apply the fluid-injection and perturbation modifications found in `class_engine/feps_class_patch_6pct.c` to the `background.c` / `perturbations.c` modules.
+3. Recompile CLASS (`make clean && make`) and run using the included parameter file (`N_ur = 3.52377`, `w0_fld = -1.10`, `wa_fld = -0.10`):
+
+    ./class class_engine/feps_params.ini
+
+### 2. Silicon Matrix Controller Simulation (`hardware_hdl/`)
+Compile and simulate `hardware_hdl/feps_silicon_matrix_controller.v` alongside `hardware_hdl/feps_controller_tb.v` using any standard Verilog simulator (e.g., Icarus Verilog or Verilator):
+
+    iverilog -o feps_sim hardware_hdl/feps_silicon_matrix_controller.v hardware_hdl/feps_controller_tb.v
+    vvp feps_sim
+
 ### 3. Monograph Compilation (`manuscript/`)
 Compile the LaTeX manuscript into PDF using `pdflatex`:
 
