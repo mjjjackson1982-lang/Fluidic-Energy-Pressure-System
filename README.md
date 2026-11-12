@@ -1,32 +1,70 @@
+
+# Fluidic-Energy-Pressure-System
+Official implementation of the Fluidic Energy Pressure System (FEPS): Resolving H_0 and S_8 cosmological tensions via early fluid outgassing and micro-silicon hardware co-simulation.
+
 # Fluidic Energy Pressure System (FEPS)
 **A Unified Field Hypothesis: Cosmological Realignment & Micro-Hardware Co-Simulation**
 
+---
+
 ## 📌 Executive Summary
-The **Fluidic Energy Pressure System (FEPS)** introduces an early-universe fluid-injection mechanism designed to resolve the Hubble ($H_0$) and $S_8$ matter-clustering tensions simultaneously[span_0](start_span)[span_0](end_span). 
 
-By introducing a localized early energy density boost ($C_{\text{fluid}} \approx +9.15\%$, $N_{\text{ur}} = 3.524$) at the recombination boundary ($z > 1090$), the sound horizon scale undergoes a uniform contraction from $147.07\text{ Mpc}$ down to $r_d = 144.4342\text{ Mpc}$ ($r_* = 141.9776\text{ Mpc}$)[span_1](start_span)[span_1](end_span).
+The **Fluidic Energy Pressure System (FEPS)** introduces an early-universe fluid-injection mechanism designed to resolve the Hubble ($H_0$) and $S_8$ matter-clustering tensions simultaneously.
 
-Coupled with an uncoupled equation of state ($w = c_s^2 = 1/3$) and zero anisotropic shear ($\sigma_{\text{vis}} = 0$), the acoustic driver term vanishes identically, preserving CMB multipole phase invariance ($\Delta C_\ell / C_\ell < 0.012\%$) while elevating the local expansion rate to **$H_0 = 73.04\text{ km/s/Mpc}$**[span_2](start_span)[span_2](end_span).
+By introducing a localized early energy-density boost ($C_{\text{fluid}} \approx +9.15\%$, $N_{\text{ur}} = 3.524$) near the recombination boundary ($z > 1090$), the sound horizon scale undergoes a uniform contraction from $147.07\text{ Mpc}$ down to $r_d = 144.4342\text{ Mpc}$ ($r_* = 141.9776\text{ Mpc}$).
+
+Coupled with an uncoupled equation of state ($w = c_s^2 = 1/3$) and zero anisotropic shear ($\sigma_{\text{vis}} = 0$), the acoustic driver term vanishes identically, preserving CMB multipole phase invariance ($\Delta C_\ell / C_\ell < 0.012\%$) while elevating the local expansion rate to $H_0 = 73.04\text{ km/s/Mpc}$.
+
+---
+
+## 🌌 Physical Origin & Effective Fluid Mechanism: Stored Angular Momentum (SAMs)
+
+Rather than assuming an arbitrary exotic particle species, FEPS models the pre-recombination energy-density boost ($C_{\text{fluid}} \approx +9.15\%$, $N_{\text{ur}} = 3.52377$) as an **effective relativistic fluid** arising from **Stored Angular Momentum (SAMs)** within the tightly coupled radiation–matter plasma. Prior to recombination ($z > 1090$), high optical depth traps electromagnetic radiation locally, allowing interacting photon modes and triadic pressure equilibria to store and recirculate angular momentum across thermal gradients. Consistent with standard Effective Field Theory (EFT) practice, FEPS treats this collective radiative pressure above an observational resolution cutoff without requiring a complete ultraviolet (UV) completion down to arbitrarily small sub-scales.
+
+This mechanism naturally governs both the timing and dissipation of the early pressure boost without fine-tuned on/off switches:
+* **Opaque Plasma Phase ($z > 1090$):** Trapped light sustains internal pressure equilibrium ($w = c_s^2 = 1/3$, $\sigma_{\text{vis}} = 0$), contracting the sound horizon ($r_d \approx 144.4342\text{ Mpc}$) while preserving the CMB acoustic phase structure.
+* **Recombination Outgassing ($z \approx 1090$):** As electrons and protons bind into neutral hydrogen and the universe becomes transparent, photon decoupling releases ("outgasses") this stored radiative angular momentum into free-streaming radiation—transitioning smoothly into standard late-time expansion.
+
+---
 
 ## 📊 Key Cosmological Results
 
 | Parameter | FEPS Best-Fit | Standard $\Lambda\text{CDM}$ | Physical Impact |
 | :--- | :--- | :--- | :--- |
-| **$H_0$** | **$73.040 \pm 0.350\text{ km/s/Mpc}$** | $67.400\text{ km/s/Mpc}$ | Resolves Cepheid/Pantheon+ local distance ladder tension[span_3](start_span)[span_3](end_span) |
-| **$r_d$** | **$144.4342\text{ Mpc}$** | $147.0700\text{ Mpc}$ | Uniform sound horizon contraction ($1.8\%$)[span_4](start_span)[span_4](end_span) |
-| **$r_*$** | **$141.9776\text{ Mpc}$** | $144.4300\text{ Mpc}$ | Preserves decoupling ratio ($r_*/r_d = 0.9830$)[span_5](start_span)[span_5](end_span) |
-| **$S_8$** | **$0.7918 \pm 0.0040$** | $0.8340$ | $15\text{--}20\%$ sub-horizon power damping (DES Y3 $1\sigma$ match)[span_6](start_span)[span_6](end_span)[span_7](start_span)[span_7](end_span) |
-| **$N_{\text{ur}}$** | **$3.52377$** | $3.0460$ | $6\%$ early fluid boost outgassing[span_8](start_span)[span_8](end_span) |
-| **$w_0, w_a$** | **$-1.10, -0.10$** | $-1.00, 0.00$ | Late-time CPL dark energy transition[span_9](start_span)[span_9](end_span) |
+| **$H_0$** | $73.040 \pm 0.350\text{ km/s/Mpc}$ | $67.400\text{ km/s/Mpc}$ | Resolves Cepheid / Pantheon+ local distance ladder tension |
+| **$r_d$** | $144.4342\text{ Mpc}$ | $147.0700\text{ Mpc}$ | Uniform sound horizon contraction ($\sim 1.8\%$) |
+| **$r_*$** | $141.9776\text{ Mpc}$ | $144.4300\text{ Mpc}$ | Preserves decoupling ratio ($r_*/r_d = 0.9830$) |
+| **$S_8$** | $0.7918 \pm 0.0040$ | $0.8340$ | $15\text{--}20\%$ sub-horizon power damping (DES Y3 $1\sigma$ match) |
+| **$N_{\text{ur}}$** | $3.52377$ | $3.0460$ | $6\%$ early fluid boost outgassing |
+| **$w_0, w_a$** | $-1.10, -0.10$ | $-1.00, 0.00$ | Late-time CPL dark energy transition |
 
-## 💻 Micro-Hardware Matrix Integration
-The macro-cosmological outgassing equations map directly onto micro-cavity hardware logic[span_10](start_span)[span_10](end_span). The Verilog controller implements:
-* **Clock Carrier:** $476,054\text{ Hz}$ AC Plasma Resonator[span_11](start_span)[span_11](end_span)
-* **Mod-9 Digital Root Sequence:** Doubling state logic ($1 \to 2 \to 4 \to 5 \to 7 \to 8$)[span_12](start_span)[span_12](end_span)[span_13](start_span)[span_13](end_span)
-* **Outgassing Gate:** Mercy Vent valve activation at $0.875$ saturation ($\Delta_{\text{vent}} = 0.000537$)[span_14](start_span)[span_14](end_span)[span_15](start_span)[span_15](end_span)
-* **Elasticity Scaling:** $\alpha = 1.1650$ fixed-point rail voltage step-up[span_16](start_span)[span_16](end_span)[span_17](start_span)[span_17](end_span)
+---
 
-Licensed under the MIT License.
+## 💻 Micro-Hardware Matrix Integration & Cosmology-to-Circuit Mapping
 
-# Fluidic-Energy-Pressure-System
-Official implementation of the Fluidic Energy Pressure System (FEPS): Resolving H_0 and S_8 cosmological tensions via early fluid outgassing and micro-silicon hardware co-simulation.
+The hardware implementation in `hardware_hdl/` serves as a scale-bridged control architecture demonstrating how the same pressure-regulation and outgassing rules operate in a deterministic silicon matrix controller:
+
+* **Clock Carrier:** $476,054\text{ Hz}$ AC Plasma Resonator
+* **Mod-9 Digital Root Sequence:** Doubling state logic ($1 \to 2 \to 4 \to 5 \to 7 \to 8$)
+* **Outgassing Gate:** Mercy Vent valve activation at $0.875$ saturation ($\Delta_{\text{vent}} = 0.000537$)
+* **Elasticity Scaling:** $\alpha = 1.1650$ fixed-point rail voltage step-up
+
+| Cosmological Principle (FEPS) | Governing Quantity / Equation | Circuit / HDL Translation (`feps_silicon_matrix_controller.v`) | Nature of Correspondence |
+| :--- | :--- | :--- | :--- |
+| **Pre-Recombination Pressure Equilibrium (SAMs)** | $w = c_s^2 = 1/3$, $\sigma_{\text{vis}} = 0$ ($C_{\text{fluid}} \approx +9.15\%$) | $476,054\text{ Hz}$ AC plasma resonator & $\alpha = 1.1650$ fixed-point rail voltage step-up | **Scale-Bridged Control Principle:** Maintains symmetric energy recirculation without shear/phase distortion |
+| **Sound Horizon Contraction** | $r_d: 147.07 \to 144.4342\text{ Mpc}$ with $r_*/r_d = 0.9830$ | Mod-9 digital-root doubling sequence ($1 \to 2 \to 4 \to 5 \to 7 \to 8$) | **Deterministic Timing Analog:** Compresses cycle period while preserving phase-step ratios |
+| **Photon Decoupling ("Outgassing")** | Optical depth drop at $z \approx 1090$ releasing stored radiative pressure | Mercy Vent gate triggered at $0.875$ saturation ($\Delta_{\text{vent}} = 0.000537$) | **Threshold Relief Mechanism:** Controlled energy bleed preventing over-pressure saturation |
+
+---
+
+## 📂 Repository Structure & How to Run
+
+```text
+├── class_engine/
+│   └── feps_class_patch_6pct.c            # C patch implementing the FEPS fluid boost in CLASS
+├── hardware_hdl/
+│   └── feps_silicon_matrix_controller.v   # Verilog HDL implementation of the 476 kHz pressure controller
+├── manuscript/
+│   └── feps_monograph_part1.tex           # LaTeX monograph detailing the theoretical derivation
+├── LICENSE                                # MIT License
+└── README.md
