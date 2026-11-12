@@ -65,6 +65,9 @@ The hardware implementation in `hardware_hdl/` serves as a scale-bridged control
 ## 📂 Repository Structure & How to Run
 
 ```text
+## 📂 Repository Structure & How to Run
+
+```text
 ├── class_engine/
 │   ├── feps_class_patch_6pct.c            # C patch implementing the FEPS fluid boost in CLASS
 │   └── feps_params.ini                    # Ready-to-run CLASS v3.2.0 parameter configuration file
@@ -73,8 +76,13 @@ The hardware implementation in `hardware_hdl/` serves as a scale-bridged control
 │   └── feps_controller_tb.v               # Verilog simulation testbench
 ├── manuscript/
 │   └── feps_monograph_part1.tex           # LaTeX monograph detailing the theoretical derivation
+├── mcmc_chains/
+│   ├── feps_mcmc.param                    # 8-parameter MCMC sampler configuration (MontePython/Cobaya)
+│   └── gelman_rubin_summary.txt           # 4-chain parallel posterior & Gelman-Rubin convergence readout
 ├── LICENSE                                # MIT License
 └── README.md
+
+ feps_silicon_matrix_controller.v   # Verilog HDL implementation of the 476 kHz pressure controller
 ### 1. Cosmological Boltzmann Simulation (`class_engine/`)
 1. Clone a standard distribution of the [CLASS](https://github.com/lesgourg/class_public) Boltzmann code (v3.2.0+).
 2. Apply the fluid-injection and perturbation modifications found in `class_engine/feps_class_patch_6pct.c` to the `background.c` / `perturbations.c` modules.
