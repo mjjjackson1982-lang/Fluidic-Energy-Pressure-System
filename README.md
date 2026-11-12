@@ -62,7 +62,8 @@ The hardware implementation in `hardware_hdl/` serves as a scale-bridged control
 
 ```text
 ├── class_engine/
-│   └── feps_class_patch_6pct.c            # C patch implementing the FEPS fluid boost in CLASS
+│   ├── feps_class_patch_6pct.c            # C patch implementing the FEPS fluid boost in CLASS
+│   └── feps_params.ini                    # Ready-to-run CLASS v3.2.0 parameter configuration file
 ├── hardware_hdl/
 │   ├── feps_silicon_matrix_controller.v   # Verilog HDL implementation of the 476 kHz pressure controller
 │   └── feps_controller_tb.v               # Verilog simulation testbench
@@ -70,4 +71,5 @@ The hardware implementation in `hardware_hdl/` serves as a scale-bridged control
 │   └── feps_monograph_part1.tex           # LaTeX monograph detailing the theoretical derivation
 ├── LICENSE                                # MIT License
 └── README.md
+
 
