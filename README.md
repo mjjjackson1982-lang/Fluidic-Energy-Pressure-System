@@ -78,7 +78,8 @@ The hardware implementation in `hardware_hdl/` serves as a scale-bridged control
 │   ├── feps_mcmc.param                    # 8-parameter MCMC sampler configuration (MontePython/Cobaya)
 │   └── gelman_rubin_summary.txt           # 4-chain parallel posterior & Gelman-Rubin convergence readout
 ├── CITATION.cff                          # Machine-readable academic citation metadata
-├── LICENSE                                # MIT License
+├── LICENSE  # MIT License
+├── PREDICTIONS.md                         # Quantitative MCMC posteriors, EE/TE residuals & distance checkpoints                              
 └── README.md
 ```
 ### 1. Cosmological Boltzmann Simulation (`class_engine/`)
